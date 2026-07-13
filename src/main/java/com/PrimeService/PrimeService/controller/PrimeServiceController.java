@@ -2,12 +2,14 @@ package com.PrimeService.PrimeService.controller;
 
 import com.PrimeService.PrimeService.model.PrimeResponse;
 import com.PrimeService.PrimeService.service.PrimeService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -27,7 +29,11 @@ public class PrimeServiceController {
     )
     public ResponseEntity<PrimeResponse> getPrimes(@PathVariable int limit) {
         if (limit < 0) {
-            return ResponseEntity.badRequest().build();
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,
+                    "Please enter a positive number"
+            );
+  //          return ResponseEntity.badRequest().build();
         }
 
         List<Integer> primes = primeService.getPrimesUpTo(limit);

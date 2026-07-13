@@ -16,7 +16,7 @@ public class PrimeService {
             return new ArrayList<>();
         }
         // Use the Sieve of Eratosthenes for limits up to 1,000,000
-        if (limit > 10 && limit <= 1_000_000) {
+        if (limit <= 1_000_000) {
             return sieveOfEratosthenes(limit);
         } else {
             // Fallback or secondary algorithm for larger numbers
