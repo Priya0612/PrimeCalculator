@@ -1,10 +1,9 @@
 # PrimeCalculator
-<<<<<<< HEAD
-PrimeCalculator
-README.md — Spring Boot REST API services with Docker & GitHub Actions
+
+
 =======
 README.md — Spring Boot REST API services with Docker & GitHub Actions 
->>>>>>> c553fe2f0672a315c5f007c8fc5d41f6cac84147
+
 
 **🚀 Overview **
 
@@ -16,7 +15,7 @@ Java 26 (Temurin),Spring Boot,Maven,JUnit 5,MockMvc,Docker
 
 **📦 Project Structure **
 
-<<<<<<< HEAD
+
 src/main/java → Application + Model+ Controllers + Services src/test/java → Unit + Integration Tests Dockerfile → Runtime image (Java 26 JRE) pom.xml → Maven configuration
 
 🔧 Prerequisites
@@ -34,7 +33,7 @@ Dockerfile → Runtime image (Java 26 JRE) pom.xml → Maven configuration
 Install the following: Java 26,Maven 3.9+, Docker Desktop, Git
 
 **Verify installations:** java -version, mvn -version, docker --version,git --version
->>>>>>> c553fe2f0672a315c5f007c8fc5d41f6cac84147
+
 
 📥 1. Clone the Repository git clone https://github.com//.git cd
 
@@ -52,8 +51,7 @@ http://localhost:8080/primes/10?accept=json
 
 http://localhost:8080/primes/10?accept=xml
 
-<<<<<<< HEAD
+
 ****Run the JAR directly java -jar PrimeService-0.0.1-SNAPSHOT.jar
-=======
-****Run the JAR directly java -jar PrimeService-0.0.1-SNAPSHOT.jar
->>>>>>> c553fe2f0672a315c5f007c8fc5d41f6cac84147
+
+
