@@ -1,0 +1,4 @@
+com\PrimeService\PrimeService\service\PrimeService.class
+com\PrimeService\PrimeService\controller\PrimeServiceController.class
+com\PrimeService\PrimeService\model\PrimeResponse.class
+com\PrimeService\PrimeService\PrimeServiceApplication.class

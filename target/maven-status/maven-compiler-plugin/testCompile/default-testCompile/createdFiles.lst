@@ -1,0 +1,3 @@
+com\PrimeService\PrimeService\PrimeServiceApplicationTests.class
+com\PrimeService\PrimeService\controller\PrimeServiceControllerIntegrationTest.class
+com\PrimeService\PrimeService\service\PrimeServiceControllerServiceTest.class
